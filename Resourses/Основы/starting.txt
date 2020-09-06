@@ -1,0 +1,119 @@
+"use srtict";
+const obj = {//объект
+    name:"Egor",
+    age: 20, 
+    isMarried: false
+};
+console.log(obj.name);//console.log(obj['name']);
+
+let arr = ['plum.png','orange.jpg', 7, 'Egor'];
+console.log(arr[1]);
+
+
+
+--------------------------------------------------------------
+
+
+
+"use srtict";
+// alert("Hello");
+// const result = confirm("Are you here?");
+// console.log(result);
+const answer = prompt("Вам есть 18?","18");//тут строка
+//const answer = prompt("Вам есть 18?","18");//тут число
+console.log(typeof(answer));
+const answers=[];
+//answers[0]=prompt('Как ваше имя?','');
+//answers[1]=prompt('Как ваше фамилия?','');
+//answers[2]=prompt('Сколько вам лет?','');
+
+console.log(typeof(answers));
+//всё это корректно работает только внутри браузера, не всё будет корректно работать в данной консоли
+
+
+
+
+------------------------------------------------------------------
+
+
+
+
+
+"use srtict";
+
+const category = 'toys';
+
+console.log('https://someurl.com/');
+//интерполяция:
+console.log(`https://someurl.com/${category}/5`);
+
+const user = 'Egor';
+ alert(`Hi, ${user}`);
+
+
+
+
+
+------------------------------------------------------------------
+
+
+
+
+
+"use srtict";
+// operators
+//console.log("arr" + " - object");
+//console.log(4 + " - object");
+//console.log(4 + +"5");//получаем число (унарный плюс)
+
+
+//инкремент и декремент
+let incr=10, decr=10;
+// ++incr;
+// --decr;
+console.log(incr++);//10
+console.log(decr--);//10
+
+
+
+-------------------------------------------------------------------
+
+
+
+
+
+//тернарный оператор в js
+const num =50;
+(num===50)?правильный ответ:неправильный ответ;
+
+//continue в условии в цикле пропускает действие в цикле и идёт на следующий шаг
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+"use srtict";
+
+function showfirstMessage(text){//создаётся сразу
+    console.log(text);
+    
+}
+
+showfirstMessage("hi");
+
+const logger = function() {//создаётся по ходу кода
+    console.log("hello");
+};
+
+logger();
+
+const calc = (a,b)=>{ return a+b};//Стрелочная функция
+
+
+
+
+--------------------------------------------------------------------------------

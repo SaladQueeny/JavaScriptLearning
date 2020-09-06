@@ -1,0 +1,18 @@
+ git init
+git config --global user.name "Egor"
+git config --global user.email example@mail.ru
+git status
+git add -a
+git commit -a -m"first commit"
+git log
+git remote add origin https://github.com/SaladQueeny/JavaScriptLearning.git
+git push -u origin master
+git push
+git pull
+
+
+начинаем работу: git pull
+заливаем: git add -A,  git commit -a -m"название изменений", git push
+
+
+связь когда изменили онлайн и офлайн вводим название cоммит и ctrl+c wq!
