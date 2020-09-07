@@ -117,3 +117,19 @@ const calc = (a,b)=>{ return a+b};//Стрелочная функция
 
 
 --------------------------------------------------------------------------------
+
+
+
+
+let fruit ="Some Fruit";
+console.log(fruit.indexOf("ui"));//поиск подстроки
+const logg = "hello world";
+console.log(logg.slice(6, logg.length));//Отрезать часть строки,от и до, отрицательные чиал пойдут с конца
+console.log(logg.substring(6, logg.length));//аналогично верхней без отрицательных
+console.log(logg.substr(6,5));//отрезать часть строки от какого-то элемента и сколько нужно отвезать
+
+const num =12.2;
+console.log(Math.round(num));
+
+const test = "12.2px";
+console.log(parseFloat(test));//отделение от слов
