@@ -13,7 +13,7 @@ console.log(arr[1]);
 
 --------------------------------------------------------------
 
-
+//обращение к пользователю самое простое
 
 "use srtict";
 // alert("Hello");
@@ -36,8 +36,7 @@ console.log(typeof(answers));
 ------------------------------------------------------------------
 
 
-
-
+//интерполяция и сложный вывод
 
 "use srtict";
 
@@ -56,9 +55,7 @@ const user = 'Egor';
 
 ------------------------------------------------------------------
 
-
-
-
+//операторы
 
 "use srtict";
 // operators
@@ -80,8 +77,6 @@ console.log(decr--);//10
 
 
 
-
-
 //тернарный оператор в js
 const num =50;
 (num===50)?правильный ответ:неправильный ответ;
@@ -94,7 +89,7 @@ const num =50;
 -----------------------------------------------------------------------
 
 
-
+//функции
 
 "use srtict";
 
@@ -119,7 +114,7 @@ const calc = (a,b)=>{ return a+b};//Стрелочная функция
 --------------------------------------------------------------------------------
 
 
-
+//строки
 
 let fruit ="Some Fruit";
 console.log(fruit.indexOf("ui"));//поиск подстроки
@@ -133,3 +128,80 @@ console.log(Math.round(num));
 
 const test = "12.2px";
 console.log(parseFloat(test));//отделение от слов
+
+
+
+
+------------------------------------------------------------------------------
+
+
+
+//callback функции
+function first(){
+    //Do something
+    setTimeout(function(){
+        console.log(1);
+    },500);
+}
+
+function second(){
+    console.log(2);
+}
+
+first();
+second();
+
+function learnJS(lang, callback){
+    console.log(`Я учу: ${lang}`)
+    callback();
+}
+function done(){
+    console.log("Я прошёл этот урок");
+}
+learnJS("JavaScript", done);//выведется сначала я учу джаваскрипт, потом я прошёл этот урок
+
+
+
+--------------------------------------------------------------------
+
+//объекты
+
+const options = {
+    name: 'test',
+    width: 1024,
+    height: 1024,
+    colors: { //объект внутри объекта
+        border: 'black',
+        background: 'red'
+    },
+    makeTest: function(){//метод объекта
+        console.log("Test");
+    }
+};
+options.makeTest();
+// delete options.name;
+
+const {border, background} = options.colors;//деструктуризация
+console.log(border);//black
+
+
+
+
+//перебор сложный и ненужный
+// let counter =0;
+// for (let key in options) { //перебор
+//     if (typeof (options[key]) == 'object') {
+//         for (let i in options[key]) {
+//             console.log(`Свойство ${i} имеет значение ${options[key][i]}`);
+//             counter++;
+//         }
+//     } else {
+//         console.log(`Свойство ${key} имеет значение ${options[key]}`);
+//         counter++;
+//     }
+// }
+// console.log(counter);
+
+
+//перебор простой
+console.log(Object.keys(options).length);
